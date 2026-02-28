@@ -1,4 +1,4 @@
-// src/components/SearchBar.jsx
+
 import React from "react";
 
 function SearchBar({ search, setSearch, region, setRegion }) {
