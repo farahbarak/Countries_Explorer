@@ -14,8 +14,8 @@ function App() {
       setError(null);
       try {
         let url = "https://restcountries.com/v3.1/all";
-        if (region !== "all") url = https://restcountries.com/v3.1/region/${region};
-        if (search.length >= 2) url = https://restcountries.com/v3.1/name/${search};
+        if (region !== "all") url = "https://restcountries.com/v3.1/region/${region}";
+        if (search.length >= 2) url = "https://restcountries.com/v3.1/name/${search}";
         const res = await fetch(url);
         if (!res.ok) throw new Error("Failed to fetch");
         const data = await res.json();
